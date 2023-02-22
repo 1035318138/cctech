@@ -1,0 +1,19 @@
+server:
+  port: 8772
+
+
+#指定注册中心地址
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+#服务的名称
+spring:
+  application:
+    name: user-service
+  datasource: #数据库相关配置
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://39.104.181.227:3307/cctech?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: root
